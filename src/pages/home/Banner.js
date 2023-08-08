@@ -25,12 +25,23 @@ const Banner = () => {
                     </div>
                     <div className="w-2/4 mt-6 ">
                         <a href={resume} download>
-                            <button  className="resume-btn w-3/4 mr-14 ">Download Resume</button>
+                            <button className="resume-btn w-3/4 mr-14 ">Download Resume</button>
                         </a>
                     </div>
                 </div>
                 <div className="w-3/4 mx-auto lg:w-full">
                     <img src={img} alt="" className="banner-image mt-6 " />
+                </div>
+                <div className="info-icon">
+                    <a href="https://www.linkedin.com/in/masud-rana-673b3821b/" target="_blank" rel="noopener noreferrer" >
+                        <BsLinkedin className="mt-4 text-xl text-blue-400"></BsLinkedin>
+                    </a>
+                    <a href="https://github.com/MasudRana15924" target="_blank" rel="noopener noreferrer" >
+                        <BsGithub className="mt-4 text-xl text-gray-900"></BsGithub>
+                    </a>
+                    <a href="https://github.com/MasudRana924" target="_blank" rel="noopener noreferrer" >
+                        <BsGithub className="mt-4 text-xl text-gray-900"></BsGithub>
+                    </a>
                 </div>
             </div>
             <div className="flex mt-16 ml-2 lg:ml-0">
