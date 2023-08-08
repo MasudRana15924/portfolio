@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <div className=" lg:w-3/4 lg:mx-auto mt-12 lg:mt-32 h-32">
             <div className="lg:flex justify-between">
-            <p className="text-start ml-2 lg:ml-0">copyright <span className="">©</span>  design in 2021 by
+            <p className="text-start ml-4 lg:ml-0">copyright <span className="">©</span>  design in 2021 by
                 <span className="font-bold ml-2">Masud Rana </span>
             </p>
-            <div className="flex gap-4 ml-2 lg:ml-0 mt-6 lg:mt-0">
+            <div className="flex gap-4 ml-4 lg:ml-0 mt-6 lg:mt-0">
                         <a href="https://www.linkedin.com/in/masud-rana-673b3821b/" target="_blank" rel="noopener noreferrer" >
                             <BsLinkedin className=" text-xl text-blue-400"></BsLinkedin>
                         </a>
