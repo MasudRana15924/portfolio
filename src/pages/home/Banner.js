@@ -32,7 +32,7 @@ const Banner = () => {
                 <div className="w-3/4 mx-auto lg:w-full">
                     <img src={img} alt="" className="banner-image mt-6 " />
                 </div>
-                <div className="info-icon">
+                <div className="hidden lg:block info-icon">
                     <a href="https://www.linkedin.com/in/masud-rana-673b3821b/" target="_blank" rel="noopener noreferrer" >
                         <BsLinkedin className="mt-4 text-xl text-blue-400"></BsLinkedin>
                     </a>
