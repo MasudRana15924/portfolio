@@ -47,8 +47,8 @@ const Navbar = () => {
                 </nav>
                 {/* for small devices */}
                 <ul className={active ? '  border border-gray-200 flex-col flex fixed inset-0 left-1/4 left:left-3/4 uppercase   gap-6  md: lg:block bg-white text-black text-start  ml-16' : 'hidden'}>
-                    <div className="flex justify-between bg-black h-20">
-                        <RxCross1 className="text-xl ml-5  mt-6 text-white" onClick={showMenu}></RxCross1>
+                    <div className="flex justify-between">
+                        <RxCross1 className="text-xl ml-5  mt-6 text-black" onClick={showMenu}></RxCross1>
 
                     </div>
                     <ul>
