@@ -6,7 +6,7 @@ import { BsGithub} from 'react-icons/bs';
 import { MdPreview } from 'react-icons/md';
 const Projects = () => {
     return (
-        <div className="mt-24 lg:mt-40 lg:w-3/4 lg:mx-auto">
+        <div className="mt-4 lg:mt-4 lg:w-3/4 lg:mx-auto" id="pojects">
             <p className="text-start text-3xl text-gray-900 mb-2 ml-2 lg:ml-0 font-semibold">My Projects</p>
             <p className="text-start text-xl text-gray-900 mb-10 font-semibold ml-2 lg:ml-0">Each project has backend service</p>
             <div className="lg:flex ">

@@ -2,8 +2,8 @@ import React from 'react';
 import { AiFillPhone,AiOutlineMail} from 'react-icons/ai';
 const Contact = () => {
     return (
-        <div className="mt-24 lg:mt-36 lg:w-3/4 mx-auto ">
-            <p className="text-start text-blue-400 text-xl lg:text-3xl ml-4 lg:ml-0">Contact Me</p>
+        <div id="contact" className=" lg:w-3/4 mx-auto ">
+            <p className="text-start text-gray-900 text-xl lg:text-3xl ml-4 lg:ml-0 font-semibold">Contact Me</p>
             <div className='lg:flex justify-between'>
             <div className='w-full'>
             {/* <p className="text-start  text-md lg:text-xl  ml-4 lg:ml-0 mt-4">Masud Rana</p> */}

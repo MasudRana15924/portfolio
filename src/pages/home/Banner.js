@@ -7,7 +7,7 @@ import { BiLogoTailwindCss } from 'react-icons/bi';
 import resume from '../../assets/cv.pdf'
 const Banner = () => {
     return (
-        <div className="mx-auto lg:w-3/4 mt-24 lg:mt-52">
+        <div className="mx-auto lg:w-3/4 mt-24 lg:mt-52" id="about">
             <div className="lg:flex lg:justify-between">
                 <div className="w-full pl-2 lg:pl-0">
                     <p className="text-start text-2xl lg:text-5xl font-bold mt-12">Junior MERN Stack Developer</p>

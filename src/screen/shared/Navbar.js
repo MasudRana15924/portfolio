@@ -2,15 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { RxCross1 } from "react-icons/rx";
+import { HashLink } from 'react-router-hash-link';
+import { Nav, } from 'react-bootstrap';
 const Navbar = () => {
-    const navigation = [
-        { name: 'Home', to: '/home' },
-        { name: 'About Us', to: '/' },
-        { name: 'Contact Us', to: '/contact' },
-        { name: 'Projects', to: '/projects' },
-        { name: 'Education', to: '/education' },
-        { name: 'Courses', to: '/course' },
-    ]
+
     const [active, setActive] = useState(false)
     const showMenu = () => {
         setActive(!active)
@@ -39,11 +34,18 @@ const Navbar = () => {
                     </div>
                     <div class="hidden lg:ml-16 lg:flex lg:gap-x-6 2xl:gap-x-12">
 
-                        {navigation.map((item) => (
-                            <Link key={item.name} to={item.to} className="text-xl font-semibold leading-6 text-gray-900">
+                        {/* {navigation.map((item) => (
+                            <Link key={item.name} as={HashLink}  to={`/home#${item.to}`} className="text-xl font-semibold leading-6 text-gray-900">
                                 {item.name}
                             </Link>
-                        ))}
+                        ))} */}
+                        <Nav.Link as={HashLink} to="/home#home" className="text-xl font-semibold leading-6 text-gray-900">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home" className="text-xl font-semibold leading-6 text-gray-900">About</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#contact" className="text-xl font-semibold leading-6 text-gray-900">Contact</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#pojects" className="text-xl font-semibold leading-6 text-gray-900">Projects</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#education" className="text-xl font-semibold leading-6 text-gray-900">Education</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#courses" className="text-xl font-semibold leading-6 text-gray-900">Courses</Nav.Link>
+
                     </div>
 
                 </nav>
@@ -55,24 +57,31 @@ const Navbar = () => {
                     </div>
                     <ul>
                         <li>
-                            <Link to="/" className=" text-sm  text-gray-900 px-5    block " onClick={showMenu}>Home</Link>
+                            {/* <Link to="/" className=" text-sm  text-gray-900 px-5    block " onClick={showMenu}>Home</Link> */}
+                            <Nav.Link as={HashLink} to="/home#home" className=" text-sm  text-gray-900 px-5    block " onClick={showMenu}>Home</Nav.Link>
                         </li>
                         <li>
-                            <Link to="/" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>
+                            {/* <Link to="/" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>
                                 About
-                            </Link>
+                            </Link> */}
+                            <Nav.Link as={HashLink} to="/home#home" className="text-sm text-gray-900 px-5 py-2   block " onClick={showMenu}>About</Nav.Link>
                         </li>
 
                         <li>
-                            <Link to="/contact" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Contact</Link>
+                            {/* <Link to="/contact" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Contact</Link> */}
+                            <Nav.Link as={HashLink} to="/home#contact" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Contact</Nav.Link>
                         </li>
                         <li>
-                            <Link to="/projects" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Projects</Link>
+                            {/* <Link to="/projects" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Projects</Link> */}
+                            <Nav.Link as={HashLink} to="/home#pojects" className="text-sm  text-gray-900 px-5 py-2   block " >Projects</Nav.Link>
                         </li>
-
-
+                        <li>
+                            <Nav.Link as={HashLink} to="/home#education" className="text-sm  text-gray-900 px-5 py-2   block " >Education</Nav.Link>
+                        </li>
+                        <li>
+                            <Nav.Link as={HashLink} to="/home#courses" className="text-sm  text-gray-900 px-5 py-2   block " >Courses</Nav.Link>
+                        </li>
                     </ul>
-
                 </ul>
 
             </header>

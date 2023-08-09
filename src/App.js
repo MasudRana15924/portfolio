@@ -17,12 +17,15 @@ function App() {
       <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact/>} />
-          <Route path="/education" element={<Education/>} />
-          <Route path="/course" element={<Courses/>} />
- 
+          <Route exact path="/" element={<Home />}>
+            
+          </Route>
+          <Route path="/home" element={<Home />} />
+          {/* <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/course" element={<Courses />} /> */}
+
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

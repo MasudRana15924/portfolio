@@ -8,7 +8,7 @@ import Courses from './Courses';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
           <Banner></Banner>
           <Education></Education>
           <Projects></Projects>

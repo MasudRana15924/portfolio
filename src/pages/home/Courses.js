@@ -4,7 +4,7 @@ import spring from '../../assets/spring.png';
 import pHero from '../../assets/phero.png';
 const Courses = () => {
     return (
-        <div className="lg:w-3/4 mx-auto mt-24 lg:mt-36">
+        <div className="lg:w-3/4 mx-auto mt-12 lg:mt-12" id="courses">
                <p className="text-start text-gray-900 text-xl lg:text-3xl ml-4 lg:ml-0 font-semibold">Courses</p>
             <section class="timeline-section">
                 <div class="timeline-items">
