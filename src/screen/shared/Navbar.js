@@ -11,15 +11,16 @@ const Navbar = () => {
         setActive(!active)
     }
     return (
-        <div >
-            <header className="absolute inset-x-0 top-0 z-50 lg:pl-2 lg:pr-2 lg:w-full lg:mx-auto  lg:mr-12 mt-6">
-                <nav className="flex items-center justify-between pr-3 lg:py-4 lg:pr-0" aria-label="Global">
+        <div className="navbar w-full">
+            <header className="lg:pl-2 lg:pr-2 lg:w-full lg:mx-auto  lg:mr-12 mt-6">
+                <nav className="flex items-center justify-between pr-3 lg:py-4 lg:pr-0" aria-label="Global"  >
                     <div className="flex lg:flex-1 ">
 
-                        <Link to="/">
+                        {/* <Link to="/">
                             <p className="text-xl font-bold leading-6 text-gray-900 ml-4 lg:ml-32">MasudRana.dev</p>
 
-                        </Link>
+                        </Link> */}
+                        <Nav.Link as={HashLink} to="/home#about" className="text-xl font-bold leading-6 text-gray-900 ml-4 lg:ml-32">MasudRana.dev</Nav.Link>
                     </div>
                     <div className="flex lg:hidden">
                         <button
@@ -39,8 +40,8 @@ const Navbar = () => {
                                 {item.name}
                             </Link>
                         ))} */}
-                        <Nav.Link as={HashLink} to="/home#home" className="text-xl font-semibold leading-6 text-gray-900">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home" className="text-xl font-semibold leading-6 text-gray-900">About</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#about" className="text-xl font-semibold leading-6 text-gray-900">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#about" className="text-xl font-semibold leading-6 text-gray-900">About</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#contact" className="text-xl font-semibold leading-6 text-gray-900">Contact</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#pojects" className="text-xl font-semibold leading-6 text-gray-900">Projects</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#education" className="text-xl font-semibold leading-6 text-gray-900">Education</Nav.Link>
@@ -64,22 +65,22 @@ const Navbar = () => {
                             {/* <Link to="/" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>
                                 About
                             </Link> */}
-                            <Nav.Link as={HashLink} to="/home#home" className="text-sm text-gray-900 px-5 py-2   block " onClick={showMenu}>About</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#home" className="text-sm text-gray-900 px-5 py-3   block " onClick={showMenu}>About</Nav.Link>
                         </li>
 
                         <li>
                             {/* <Link to="/contact" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Contact</Link> */}
-                            <Nav.Link as={HashLink} to="/home#contact" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Contact</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#contact" className="text-sm text-gray-900 px-5 py-2   block" onClick={showMenu}>Contact</Nav.Link>
                         </li>
                         <li>
                             {/* <Link to="/projects" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Projects</Link> */}
-                            <Nav.Link as={HashLink} to="/home#pojects" className="text-sm  text-gray-900 px-5 py-2   block " >Projects</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#pojects" className="text-sm  text-gray-900 px-5 py-2   block " onClick={showMenu}>Projects</Nav.Link>
                         </li>
                         <li>
-                            <Nav.Link as={HashLink} to="/home#education" className="text-sm  text-gray-900 px-5 py-2   block " >Education</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#education" className="text-smtext-gray-900 px-5 py-2 block " onClick={showMenu}>Education</Nav.Link>
                         </li>
                         <li>
-                            <Nav.Link as={HashLink} to="/home#courses" className="text-sm  text-gray-900 px-5 py-2   block " >Courses</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#courses" className="text-smtext-gray-900 px-5 py-2 block " onClick={showMenu}>Courses</Nav.Link>
                         </li>
                     </ul>
                 </ul>

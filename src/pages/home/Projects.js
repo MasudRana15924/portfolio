@@ -6,11 +6,11 @@ import { BsGithub} from 'react-icons/bs';
 import { MdPreview } from 'react-icons/md';
 const Projects = () => {
     return (
-        <div className="mt-4 lg:mt-4 lg:w-3/4 lg:mx-auto" id="pojects">
-            <p className="text-start text-3xl text-gray-900 mb-2 ml-2 lg:ml-0 font-semibold">My Projects</p>
-            <p className="text-start text-xl text-gray-900 mb-10 font-semibold ml-2 lg:ml-0">Each project has backend service</p>
+        <div id="pojects" className="lg:w-3/4 lg:mx-auto border border-white" >
+            <p className="text-start text-gray-900 text-xl lg:text-3xl mb-5 ml-4 lg:ml-0 font-semibold mt-24 lg:mt-36">My Projects</p>
+            <p className="text-start text-md text-gray-900 mb-10 font-semibold ml-4 lg:ml-0">Each project has backend service</p>
             <div className="lg:flex ">
-                <div className="w-3/4 mx-auto lg:w-full border rounded-lg">
+                <div className="w-full mx-auto lg:w-full border rounded-lg">
                     <HoverVideoPlayer
                         videoSrc={video}
                         // Playback should start 2.5 seconds into the video
@@ -68,7 +68,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-3/4 mx-auto lg:w-full mt-5 lg:mt-0 border rounded-lg">
+                <div className="w-full mx-auto lg:w-full mt-5 lg:mt-0 border rounded-lg">
                     <HoverVideoPlayer
                         videoSrc={videoOne}
                         // Playback should start 2.5 seconds into the video

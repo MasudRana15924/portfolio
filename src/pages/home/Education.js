@@ -4,8 +4,8 @@ import college from '../../assets/college.png';
 import school from '../../assets/school.png';
 const Education = () => {
     return (
-        <div className="lg:w-3/4 mx-auto mt-24 lg:mt-36 " id="education">
-              <p className="text-start text-gray-900 text-xl lg:text-3xl ml-4 lg:ml-0 font-semibold">Education</p>
+        <div id="education" className="lg:w-3/4 mx-auto border border-white" >
+              <p className="text-start text-gray-900 text-xl lg:text-3xl ml-4 lg:ml-0 font-semibold mt-24 lg:mt-36">Education</p>
             <section class="timeline-section ">
                 <div class="timeline-items">
                     <div class="timeline-item">
