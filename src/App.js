@@ -9,6 +9,8 @@ import Navbar from './screen/shared/Navbar';
 import Projects from './pages/home/Projects';
 import Footer from './screen/shared/Footer';
 import Contact from './pages/home/Contact';
+import Education from './pages/home/Education';
+import Courses from './pages/home/Courses';
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/education" element={<Education/>} />
+          <Route path="/course" element={<Courses/>} />
  
         </Routes>
         <Footer></Footer>

@@ -8,6 +8,8 @@ const Navbar = () => {
         { name: 'About Us', to: '/' },
         { name: 'Contact Us', to: '/contact' },
         { name: 'Projects', to: '/projects' },
+        { name: 'Education', to: '/education' },
+        { name: 'Courses', to: '/course' },
     ]
     const [active, setActive] = useState(false)
     const showMenu = () => {
