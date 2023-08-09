@@ -7,7 +7,7 @@ import { MdPreview } from 'react-icons/md';
 const Projects = () => {
     return (
         <div id="pojects" className="lg:w-3/4 lg:mx-auto border border-white" >
-            <p className="text-start text-gray-900 text-xl lg:text-3xl mb-5 ml-4 lg:ml-0 font-semibold mt-24 lg:mt-36">My Projects</p>
+            <p className="text-start text-gray-900 text-xl lg:text-3xl mb-5 ml-4 lg:ml-0 font-semibold mt-24 lg:mt-24">My Projects</p>
             <p className="text-start text-md text-gray-900 mb-10 font-semibold ml-4 lg:ml-0">Each project has backend service</p>
             <div className="lg:flex ">
                 <div className="w-full mx-auto lg:w-full border rounded-lg">

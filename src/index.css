@@ -1,46 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
-.navbar{
+
+.navbar {
 	position: fixed;
-	top:0;
-	background-color:#fff;
+	top: 0;
+	background-color: #fff;
 	z-index: 200;
-	
+
 }
-.info-icon{
-  position: fixed;
-  right: 1%;
-  margin-top: 140px;
+
+.info-icon {
+	position: fixed;
+	right: 1%;
+	margin-top: 140px;
 }
+
 .resume-btn {
-  background-color: black;
-  height: 30px;
-  color:white;
+	background-color: black;
+	height: 30px;
+	color: white;
 }
-.banner-image{
-  /* border-radius: 16% 48% 10% 41% / 33% 29% 43% 35% ; */
-  border-radius: 54% 44% 73% 27% / 45% 68% 32% 55% ;
+
+.banner-image {
+	/* border-radius: 16% 48% 10% 41% / 33% 29% 43% 35% ; */
+	/* border-radius: 54% 44% 73% 27% / 45% 68% 32% 55% ;
   transition: border-radius 500ms ease-in-out;
-  grid-area: image;
+  grid-area: image; */
+	-webkit-animation: morph 8s ease-in-out infinite;
+	border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	background-repeat: no-repeat;
+	animation: morph 8s ease-in-out infinite;
+	transition: all 1s ease-in-out;
+	position: relative;
 }
-.banner-image:hover{
-  /* border-radius: 79% 21% 29% 71% / 11% 74% 26% 89% ; */
-   border-radius: 16% 48% 10% 41% / 33% 29% 43% 35% ;
-}
+
+/* .banner-image:hover{
+ 
+    border-radius: 16% 48% 10% 41% / 33% 29% 43% 35% ; 
+}  */
 /* education part */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 /* *{
@@ -51,20 +63,22 @@ code {
 body{
 	font-family: 'Poppins', sans-serif;
 } */
-.timeline-section{
+.timeline-section {
 	background-color: white;
 	min-height: 100vh;
 	padding: 50px 15px;
 	/* padding-top: 20px; */
 }
-.timeline-items{
+
+.timeline-items {
 	max-width: 1000px;
-	margin:auto;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 }
-.timeline-items::before{
+
+.timeline-items::before {
 	content: '';
 	position: absolute;
 	width: 2px;
@@ -72,69 +86,82 @@ body{
 	background-color: #eaa023;
 	left: calc(50% - 1px);
 }
-.timeline-item{
+
+.timeline-item {
 	/* margin-bottom: 40px; */
 	width: 100%;
 	position: relative;
 }
-.timeline-item:last-child{
+
+.timeline-item:last-child {
 	margin-bottom: 40px;
 }
-.timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
+
+.timeline-item:nth-child(odd) {
+	padding-right: calc(50% + 30px);
 	text-align: right;
 }
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
+
+.timeline-item:nth-child(even) {
+	padding-left: calc(50% + 30px);
 }
-.timeline-dot{
+
+.timeline-dot {
 	height: 16px;
 	width: 16px;
 	background-color: #eaa023;
 	position: absolute;
 	left: calc(50% - 8px);
 	border-radius: 50%;
-	top:10px;
+	top: 10px;
 }
-.timeline-date{
+
+.timeline-date {
 	font-size: 18px;
 	color: #eaa023;
-	margin:6px 0 15px;
+	margin: 6px 0 15px;
 }
-.timeline-content{
-    background-color: white;
+
+.timeline-content {
+	background-color: white;
 	padding: 30px;
 	border-radius: 5px;
 }
-.timeline-content h3{
-    font-size: 20px;
+
+.timeline-content h3 {
+	font-size: 20px;
 	color: black;
-	margin:0 0 10px;
+	margin: 0 0 10px;
 	text-transform: capitalize;
 	/* font-weight: 500; */
 }
-.timeline-content p{
-    color: black;
+
+.timeline-content p {
+	color: black;
 	font-size: 16px;
 	/* font-weight: 300; */
 	line-height: 22px;
 }
 
 /* responsive */
-@media(max-width: 767px){
-	.timeline-items::before{
+@media(max-width: 767px) {
+	.timeline-items::before {
 		left: 7px;
 	}
-	.timeline-item:nth-child(odd){
+
+	.timeline-item:nth-child(odd) {
 		padding-right: 0;
 		text-align: left;
 	}
+
 	.timeline-item:nth-child(odd),
-	.timeline-item:nth-child(even){
+	.timeline-item:nth-child(even) {
 		padding-left: 37px;
 	}
-	.timeline-dot{
-		left:0;
+
+	.timeline-dot {
+		left: 0;
 	}
 }
+
 /* couse  */

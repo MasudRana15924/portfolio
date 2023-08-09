@@ -4,14 +4,27 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb } from 'react-icons/di';
 import { BiLogoTailwindCss } from 'react-icons/bi';
-import resume from '../../assets/cv.pdf'
+import resume from '../../assets/cv.pdf';
+import Typewriter from 'typewriter-effect';
 const Banner = () => {
     return (
         <div id="about" className="mx-auto lg:w-3/4 border border-white" >
             <div className="lg:flex lg:justify-between mt-24 lg:mt-52">
                 <div className="w-full pl-2 lg:pl-0">
                     <p className="text-start text-2xl lg:text-5xl font-bold mt-12">Junior MERN Stack Developer</p>
-                    <p className="text-start mt-10 text-md lg:text-xl"> Hello 👋 I'm Masud Rana, a dedicated and enthusiastic MERN stack developer on a mission to turn innovative ideas into remarkable web applications.</p>
+                    {/* <p className="text-start mt-10 text-md lg:text-xl"> Hello 👋 I'm Masud Rana, a dedicated and enthusiastic MERN stack developer on a mission to turn innovative ideas into remarkable web applications.</p> */}
+
+                    <p className="text-start mt-4 lg:mt-10 text-md lg:text-xl">
+                    <Typewriter
+                        options={{
+                            strings: ['Hello 👋 I,m Masud Rana, a dedicated and enthusiastic MERN stack developer on a mission to turn innovative ideas into remarkable web applications.'],
+                            autoStart: true,
+                            loop: true,
+                           
+                        }}
+                        
+                    />
+                    </p>
                     <div className="lg:hidden flex gap-4">
                         <a href="https://www.linkedin.com/in/masud-rana-673b3821b/" target="_blank" rel="noopener noreferrer" >
                             <BsLinkedin className="mt-4 text-xl text-blue-400"></BsLinkedin>
