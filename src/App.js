@@ -9,6 +9,10 @@ import Navbar from './screen/shared/Navbar';
 import Footer from './screen/shared/Footer';
 import { useEffect, useState } from 'react';
 import Loader from './pages/loader/Loader';
+import Projects from './pages/home/Projects';
+import Education from './pages/home/Education';
+import Courses from './pages/home/Courses';
+import Skills from './pages/home/Skills';
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -26,8 +30,12 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/skill" element={<Skills />} />
       </Routes>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </BrowserRouter>
   </div>}
 </div>

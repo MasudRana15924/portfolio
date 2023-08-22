@@ -1,14 +1,16 @@
 import React from 'react';
 import img from '../../assets/banner.jpg';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { AiFillHtml5 } from 'react-icons/ai';
+import { AiFillHtml5,AiFillFacebook,AiFillInstagram } from 'react-icons/ai';
 import { DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb } from 'react-icons/di';
 import { BiLogoTailwindCss } from 'react-icons/bi';
 import resume from '../../assets/cv.pdf';
 import Typewriter from 'typewriter-effect';
+import Footer from '../../screen/shared/Footer';
+
 const Banner = () => {
     return (
-        <div id="about" className="mx-auto lg:w-3/4 border border-white" >
+        <div  className="mx-auto lg:w-3/4 2xl:w-2/4 border border-white" >
             <div className="lg:flex lg:justify-between mt-24 lg:mt-52">
                 <div className="w-full pl-2 lg:pl-0">
                     <p className="text-start text-2xl lg:text-5xl font-bold mt-12">Junior MERN Stack Developer</p>
@@ -22,7 +24,6 @@ const Banner = () => {
                             loop: true,
                            
                         }}
-                        
                     />
                     </p>
                     <div className="lg:hidden flex gap-4">
@@ -35,6 +36,12 @@ const Banner = () => {
                         <a href="https://github.com/MasudRana924" target="_blank" rel="noopener noreferrer" >
                             <BsGithub className="mt-4 text-xl text-gray-900"></BsGithub>
                         </a>
+                        <a href="https://web.facebook.com/masud924" target="_blank" rel="noopener noreferrer" >
+                        <AiFillFacebook className="mt-4 text-xl text-blue-500"></AiFillFacebook>
+                    </a>
+                    <a href="https://www.instagram.com/masudrana_924/" target="_blank" rel="noopener noreferrer" >
+                        <AiFillInstagram className="mt-4 text-xl text-orange-500"></AiFillInstagram>
+                    </a>
                     </div>
                     <div className="w-2/4 mt-6 ">
                         <a href={resume} download>
@@ -55,9 +62,16 @@ const Banner = () => {
                     <a href="https://github.com/MasudRana924" target="_blank" rel="noopener noreferrer" >
                         <BsGithub className="mt-4 text-xl text-gray-900"></BsGithub>
                     </a>
+                    <a href="https://web.facebook.com/masud924" target="_blank" rel="noopener noreferrer" >
+                        <AiFillFacebook className="mt-4 text-xl text-blue-500"></AiFillFacebook>
+                    </a>
+                    <a href="https://www.instagram.com/masudrana_924/" target="_blank" rel="noopener noreferrer" >
+                        <AiFillInstagram className="mt-4 text-xl text-orange-500"></AiFillInstagram>
+                    </a>
                 </div>
+               
             </div>
-            <div className="flex mt-16 ml-2 lg:ml-0">
+            {/* <div className="flex mt-16 ml-2 lg:ml-0">
                 <p className="text-start text-xl text-gray-900 font-semibold ">Skills | </p>
                 <abbr title="HTML 5">  <AiFillHtml5 className=" text-red-400 lg:ml-6 mt-1 lg:mt-0 h-6 w-10  lg:h-10 lg:w-12"></AiFillHtml5></abbr>
                 <abbr title="CSS">      <DiCss3 className="text-blue-400 mt-1 lg:mt-0 h-6 w-10  lg:h-10 lg:w-12"></DiCss3></abbr>
@@ -67,8 +81,8 @@ const Banner = () => {
                 <abbr title="Mongo Db">       <DiMongodb className="text-green-400 h-6 w-10 mt-1 lg:mt-0 lg:h-10 lg:w-12"></DiMongodb></abbr>
                 <abbr title="Nodejs">     <DiNodejsSmall className="text-green-400 h-6 w-10 mt-1 lg:mt-0 lg:h-10 lg:w-12"></DiNodejsSmall></abbr>
 
-            </div>
-
+            </div> */}
+       
         </div>
     );
 };

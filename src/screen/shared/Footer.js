@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin ,BsInstagram} from 'react-icons/bs';
 
 const Footer = () => {
     return (
-        <div className=" lg:w-3/4 lg:mx-auto mt-12 lg:mt-32 h-32">
+        <div className=" lg:w-3/4 lg:mx-auto mt-12 h-32">
             <div className="lg:flex justify-between">
             <p className="text-start ml-4 lg:ml-0">copyright <span className="">©</span>  design in 2021 by
                 <span className="font-bold ml-2">Masud Rana </span>
@@ -23,7 +23,9 @@ const Footer = () => {
                         </a>
                     </div>
             </div>
+           
         </div>
+        
     );
 };
 

@@ -9,6 +9,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 code {
@@ -21,7 +22,6 @@ code {
 	top: 0;
 	background-color: #fff;
 	z-index: 200;
-
 }
 
 .info-icon {
@@ -49,20 +49,6 @@ code {
 	position: relative;
 }
 
-/* .banner-image:hover{
- 
-    border-radius: 16% 48% 10% 41% / 33% 29% 43% 35% ; 
-}  */
-/* education part */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
-/* *{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
-body{
-	font-family: 'Poppins', sans-serif;
-} */
 .timeline-section {
 	background-color: white;
 	min-height: 100vh;
@@ -142,9 +128,36 @@ body{
 	/* font-weight: 300; */
 	line-height: 22px;
 }
+/* footer  */
+.custom-shape-divider-top-1692716391 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1692716391 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 228px;
+}
+
+.custom-shape-divider-top-1692716391 .shape-fill {
+    fill: #FFFFFF;
+}
 /* responsive */
+@media only screen and (max-width: 600px) {
+	body{
+		overflow-x: hidden;
+	}
+  }
 @media(max-width: 767px) {
+	body{
+		overflow-x: hidden;
+	}
 	.timeline-items::before {
 		left: 7px;
 	}

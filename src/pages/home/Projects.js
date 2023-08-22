@@ -4,9 +4,10 @@ import video from '../../assets/health.mp4';
 import videoOne from '../../assets/fintech.mp4';
 import { BsGithub} from 'react-icons/bs';
 import { MdPreview } from 'react-icons/md';
+import Footer from '../../screen/shared/Footer';
 const Projects = () => {
     return (
-        <div id="pojects" className="lg:w-3/4 lg:mx-auto border border-white" >
+        <div  className=" lg:mt-24 lg:w-3/4 2xl:w-2/4 mx-auto lg:mx-auto border border-white" >
             <p className="text-start text-gray-900 text-xl lg:text-3xl mb-5 ml-4 lg:ml-0 font-semibold mt-24 lg:mt-24">My Projects</p>
             <p className="text-start text-md text-gray-900 mb-10 font-semibold ml-4 lg:ml-0">Each project has backend service</p>
             <div className="lg:flex ">
@@ -77,7 +78,7 @@ const Projects = () => {
                     />
                 </div>
             </div>
-
+            <Footer></Footer>
         </div>
     );
 };
