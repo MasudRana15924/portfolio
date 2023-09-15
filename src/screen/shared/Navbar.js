@@ -9,7 +9,7 @@ const Navbar = () => {
         setActive(!active)
     }
     return (
-        <div className="navbar w-full  overflow-hidden">
+        <div className="navbar w-full overflow-hidden">
             <header className="lg:pl-2 lg:pr-2 lg:w-full lg:mx-auto  lg:mr-12 mt-6">
                 <nav className="flex items-center justify-between pr-3 lg:py-4 lg:pr-0" aria-label="Global"  >
                     <div className="flex lg:flex-1 ">
